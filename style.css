@@ -135,7 +135,7 @@ z-index: 11;
 {
     position: relative;
     padding: 10px;
-    background-image:url(assets/jfk.png);
+    background-image:url(assets/jfk.png );
     height:550px;
     background-attachment: fixed;
     background-position: center;
@@ -298,7 +298,6 @@ z-index: 11;
     font-size: 3.5em;
     margin-bottom: 10px;
     color: white;
-    position:center;
 }
 
 .vid-gallery-title h2{
@@ -352,7 +351,7 @@ z-index: 11;
     height: 300px;
     width: auto;
     background-color:black;
-    font-display: flex;
+    display:flex;
     justify-content: center;
     padding:30px;
   }
@@ -366,12 +365,12 @@ text-align: center;
 
 @media screen and (max-width: 480px) {
     .footer {
-        flex-wrap: wrap; /* Stack videos on smaller screens */
-        height: auto; /* Adjust height to fit the stacked videos */
+        flex-wrap: wrap; 
+        height: auto; 
     }
 
     form .centered {
-        flex: 0 0 100%; /* Full width for stacked videos */
+        flex: 0 0 100%; 
         font-size:smaller;
         padding: 10px;
     }
