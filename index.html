@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+    <title>MOON WEBSITE</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><i>Cheat Sheets!</i></a>
+        <ul>
+            <li><a href="#sec">Why?</a></li>
+            <li><a href="#secB">When?</a></li>
+            <li><a href="#secC">Where?</a></li>
+            <li><a href="#secD">How?</a></li>
+            <li><a href="#prefooter">Video Resources</a></li>
+        </ul>
+    </header>
+    <section>
+		<img src="assets/stars.png" id="stars">
+		<img src="assets/shuttle.png" id="shuttle">
+		<h2 id="text">The 1969 Moon Landing</h2>
+		<img src="assets/moon_surface.png" id="moon_surface">
+	</section>
+
+<div class="sec" id="sec">
+    <h2>Why?</h2>
+    <p>The 1969 moon landing, undertaken by NASA's Apollo 11 mission, was driven by a combination of scientific curiosity, political competition, and the aspiration to showcase technological prowess. At the height of the Cold War, the United States sought to demonstrate its superiority over the Soviet Union, which had achieved several space milestones. </p><br>
+    <p>The moon landing symbolized the triumph of democracy and innovation over communism, a powerful propaganda message during that era. Moreover, the scientific motivation behind the mission aimed to advance humanity's understanding of the moon's geology, origin, and potential as a stepping stone for future space exploration.
+    </p>
+    <br>
+    </div>
+
+
+    <div class="secB" id="secB">
+        <h2>When?</h2>
+        <p> The historic moon landing took place on July 20, 1969, during the Apollo 11 mission. The Apollo program had been initiated by President John F. Kennedy in 1961, setting the ambitious goal of landing humans on the moon and bringing them safely back to Earth before the decade's end.<br></br>The actual landing occurred four days after the Apollo 11 spacecraft launched from Kennedy Space Center in Florida. Neil Armstrong and Edwin "Buzz" Aldrin became the first humans to set foot on the moon's surface, while Michael Collins orbited above in the command module.
+        </p>
+        </div>
+
+
+        <div class="secC" id="secC">
+            <h2>Where?</h2>
+            <p>The moon landing occurred on the lunar surface within the Sea of Tranquility, a flat region on the moon's near side. The specific landing site was chosen for its relatively smooth terrain, which minimised risks during the descent and provided a safe environment for the astronauts to explore.</p><br>
+               <p> The Sea of Tranquility's location also ensured optimal communication with mission control on Earth. The choice of landing site was a result of careful analysis and consideration of both scientific objectives and engineering constraints.
+            </p>
+            </div>
+
+
+                <div class="secD" id="secD">
+    <h2>How?</h2>
+    <div class="align-R"></div>
+    <p >The moon landing was a meticulously planned and executed endeavour. The Apollo 11 spacecraft consisted of three components: the command module, the service module, and the lunar module. The lunar module, named Eagle, separated from the command module and descended to the moon's surface. After a series of challenging manoeuvres, Neil Armstrong and Buzz Aldrin safely touched down using the lunar module's thrusters.</p><br>
+    <p>Armstrong's famous words, "That's one small step for  man, one giant leap for mankind," marked his historic first steps on the moon. The lunar module eventually returned to the command module, and the astronauts made the journey back to Earth, splashing down in the Pacific Ocean on July 24, 1969. The success of the Apollo 11 mission was a result of innovative engineering, rigorous training, and the dedication of countless individuals working together to achieve an audacious goal.
+    </p>
+</div>
+    </div>
+
+    <span class="vid-gallery-title" id="vid-gallery-title">
+<h2> Video Gallery</h2>
+    </span>
+               <prefooter id="prefooter">
+               <div class="video-gallery">
+        <div class="video-item" name="video-item" id="video-item">
+            <iframe width=100% height=100% src="https://www.youtube.com/embed/nOcDftgR5UQ" title="Apollo 11: Landing on the Moon" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                Heuston, we have a problem... Your browser doesn't support this video file :/
+        </div>
+        <div class="video-item">
+                <iframe width=100% height=100% src="https://www.youtube.com/embed/w4wx_3XOrns" title="Apollo 11: One Small Step on the Moon for All Mankind" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                AW Snap! Your browser doesn't support this video :/
+        </div>
+        <div class="video-item">
+                <iframe width=100% height=100% src="https://www.youtube.com/embed/GTJkTKVWYaM" title="Apollo 11: The final 13 minutes to the Moon - BBC World Service, 13 Minutes to the Moon podcast" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                Heuston, we have a problem..your browser doesn't suppor this video file :/
+        <label for="video-item" color="white"> Courtesy of YouTube</label>
+            </div>
+    </div>
+</prefooter>
+
+<span class="footer" id="footer">
+    <h2>Stay in touch with us for more exciting <i>cheat-sheets</i></h2>
+<form action ="github.com" method="post" class="centered">
+    <label for="name" color="white"> Name</label>  
+    <input type="text" name="name" placeholder="Name">
+    <label for ="email">Email Address</label>
+        <input type="email" name ="email" placeholder="youremail@email.com">
+        <label for ="teacher"> I am a..   Teacher</label>
+        <input type="radio" name="option" value="teacher" id="teacher">
+        <label for="student">Student</label>
+        <input type="radio" name="option" value="student" id="student">
+        <input type ="submit"/>
+    </form>
+</span>
+
+<script>
+    let stars = document.getElementById('stars');
+    let shuttle = document.getElementById('shuttle');
+    let text = document.getElementById('text');
+    let moon_surface= document.getElementById('moon_surface');
+    let header = document.querySelector('header')
+
+    window.addEventListener('scroll',function(){
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + 'px';
+        shuttle.style.top = value *0.80 + 'px';
+        moon_surface.style.top = value * 0 + 'px';
+        text.style.marginRight = value * 4 + 'px';
+        text.style.marginTop = value * 1.5 + 'px';
+        header.style.top = value * 0.5 + 'px';
+    })
+</script>
+
+</body>
+</html>
